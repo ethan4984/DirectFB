@@ -140,8 +140,3 @@ echo Running automake ...
 automake -Wno-portability --add-missing $am_opt
 
 cd $ORIGDIR
-
-echo Running configure --enable-maintainer-mode "$@" ...
-$srcdir/configure --enable-maintainer-mode "$@" || exit 1
-
-echo "Now type 'make' to compile $PROJECT."
